@@ -1,0 +1,56 @@
+.subscriptionPage {
+  height: var(--tg-viewport-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    touch-action: pan-x;
+  }
+}
+
+.carousel {
+  display: flex;
+  gap: 16px; 
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+  padding: 0 16px;
+  width: 92%;
+}
+
+.card {
+  flex: 0 0 70%; 
+  max-width: 400px; 
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+  border-radius: 12px;
+
+  h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+
+  .chooseButton {
+    margin-top: 16px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+}
